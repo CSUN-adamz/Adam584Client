@@ -1,0 +1,31 @@
+<h1 id="tableLabel">2024 NHL Season</h1>
+
+<p>Data for this project will come from the NHL 2024 Season.</p>
+
+@if (forecasts){
+  <table>
+    <thead>
+        <tr>
+            <th>Team</th>
+            <th>Players</th>
+            <th>Standings</th>
+            <th>+/- Differential Gained</th>
+        </tr>
+    </thead>
+    <tbody>
+      @for (forecast of forecasts; track $index){
+        <tr >
+            <td>{{ forecast.date }}</td>
+            <td>{{ forecast.temperatureC }}</td>
+            <td>{{ forecast.temperatureF }}</td>
+            <td>{{ forecast.summary }}</td>
+        </tr>
+      }
+    </tbody>
+</table>
+}
+@else {
+  <p><em>Loading... Please refresh once the ASP.NET backend has started. See <a href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+}
+
+
