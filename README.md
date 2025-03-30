@@ -1,4 +1,6 @@
-# StinkyProjectClient
+# StinkyProjectClient - NHL Hockey Stats
+Iterim Status for 584 Client
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
 
